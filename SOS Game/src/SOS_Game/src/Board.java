@@ -101,11 +101,7 @@ public class Board {
         this.writer.writeMessage(String.format("Game mode has been switched to %s.\n", this.gameMode));
     }
 
-    /**
-     * @param row    The row index.
-     * @param column The column index.
-     * @return The tile at the given (row, column) index.
-     */
+ 
     public BoardTile getTile(int row, int column) {
         assert (row >= 0 && row < this.getBoardSize() &&
                 column >= 0 && column < this.getBoardSize()) :
@@ -114,9 +110,6 @@ public class Board {
         return grid[row][column];
     }
 
-    /**
-     * @return ArrayList<Pair> of all empty tile locations on board.
-     */
     public ArrayList<Pair> getEmptyTiles() {
         ArrayList<Pair> emptyTiles = new ArrayList<>();
         for (int i = 0; i < this.getBoardSize(); i++) {
@@ -129,9 +122,7 @@ public class Board {
         return emptyTiles;
     }
 
-    /**
-     * @return The board's active player.
-     */
+  
     public Player getTurn() {
         return turn;
     }
