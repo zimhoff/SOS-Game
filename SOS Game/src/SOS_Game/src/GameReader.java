@@ -29,6 +29,7 @@ public class GameReader {
         this.moves = read(String.valueOf(contents));
     }
 
+    
     public ArrayList<Move> read(String string) {
         final String move_pattern = "Player (?<Player>[12]) \\((?<Tile>[SO]), (?<Style>Human|Computer)\\): \\((?<Row>(\\d)),(?<Column>(\\d))\\)";
         final String initialize_pattern = "Board has been initialized at size (?<size>\\d).";

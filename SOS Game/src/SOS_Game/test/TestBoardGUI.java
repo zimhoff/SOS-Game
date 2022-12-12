@@ -61,6 +61,7 @@ public class TestBoardGUI {
             e.printStackTrace();
         }
     }
+    
 
     @Test
     public void testNewGame() {
